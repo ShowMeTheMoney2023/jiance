@@ -27,6 +27,7 @@ body {
 /* Header 样式 */
 header {
     padding: 1rem 0;
+    margin: 0;
     background-color: var(--secondary-background);
 }
 
@@ -74,7 +75,7 @@ nav li {
 }
 
 .hero-text {
-    flex: 1;
+    flex: 0 0 40%;
     padding: 1.5rem;
     margin: 0;
     box-sizing: border-box;
@@ -108,7 +109,6 @@ nav li {
 /* Input Area */
 .input-area {
     flex: 0 0 60%;
-    max-width: 60%;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -246,26 +246,18 @@ footer .container {
 /* Responsive Design */
 @media (max-width: 1200px) {
     .hero-container {
+        flex-direction: column;
         gap: 2rem;
     }
     
     .hero-text {
-        flex: 0 0 40%;
+        flex: 1;
+        width: 100%;
     }
     
     .input-area {
-        flex: 0 0 60%;
-        max-width: 60%;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero-container {
-        flex-direction: column;
-    }
-    
-    .hero-text, .input-area {
-        flex: 1 1 100%;
+        flex: 1;
+        width: 100%;
     }
     
     .input-area textarea {
@@ -343,4 +335,11 @@ footer .container {
     color: #333;
     margin-top: 15px;
     font-size: 14px;
+}
+
+/* Reset body and html styles */
+html, body {
+    margin: 0; /* 去掉默认边距 */
+    padding: 0; /* 去掉默认填充 */
+    height: 100%; /* 确保高度为100% */
 }

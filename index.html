@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>AI检测 - AI免费检测 AI鉴定 人工智能检测</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="description" content="AI检测是一个免费的在线工具，帮助用户检测内容是否由人工智能生成，确保数据隐私和安全。">
+    <meta name="keywords" content="AI检测, 人工智能检测, AI鉴定, AI免费检测">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>
+                    <a href="/">AI检测</a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="#features">特点</a></li>
+                        <!--<li><a href="#about">关于</a></li>-->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="input-area">
+                    <textarea id="inputText" placeholder="请粘贴内容或上传文件 (*.docx, *.txt)"></textarea>
+                    <div class="button-group">
+                        <button id="scanButton">检测输入</button>
+                        <button id="uploadButton">上传文件</button>
+                    </div>
+                    <script type="module" src="./api.js"></script> <!-- 正确的路径 -->
+                </div>
+                <div class="hero-text" id="resultContainer">
+                    <h2>AI检测</h2>
+                    <p>
+                        逐一分析检测GPT、Claude、Kimi、豆包、文言一心等常见大模型，提升准确性。<br/> <br/>数据不会存储到服务器，确保您数据安全。<br/><br/>没有文本长度或使用频率的限制，服务完全免费。<br/><br/>
+                        检测可能需要稍长时间，但从提升准确性看，值得等待。<br/>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="features" class="features">
+            <div class="container">
+                <h2>特点</h2>
+                <div class="feature-list" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+                    <div class="feature-item" style="flex: 1; margin: 10px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; text-align: center;">
+                        <h3>高度准确</h3>
+                        <p style="color: #555; line-height: 2;">通过逐一分析常见AI大模型（如GPT、Kimi、、豆包、文言一心、PaLM2、Claude、Gemini、LLaMA2、T5、Megatron-Turing、Gopher 等），精确检测 AI 生成的内容。每个模型的独特特征都经过仔细分析，以确保顶级准确性。</p>
+                    </div>
+                    <div class="feature-item" style="flex: 1; margin: 10px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; text-align: center;">
+                        <h3>隐私优先</h3>
+                        <p style="color: #555; line-height: 2;">您的数据不会存储到服务器上。</p>
+                    </div>
+                    <div class="feature-item" style="flex: 1; margin: 10px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; text-align: center;">
+                        <h3>免费使用</h3>
+                        <p style="color: #555; line-height: 2;">免费分析您的内容。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <h2>Price</h2>
+                <div class="pricing-plans" style="display: flex; justify-content: space-between;">
+                    <div class="plan" style="flex: 1; margin: 0 10px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; text-align: center;">
+                        <h3>Essential</h3>
+                        <p>$0 / mo</p>
+                        <p>Ideal for individuals and freelancers</p>
+                        <button style="background-color: #0056b3; color: white; border: none; border-radius: 4px; padding: 10px 15px; cursor: pointer;">Start</button>
+                    </div>
+                    <div class="plan" style="flex: 1; margin: 0 10px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; text-align: center;">
+                        <h3>Pro</h3>
+                        <p>$0 / mo</p>
+                        <p>Perfect for professionals and small businesses</p>
+                        <button style="background-color: #0056b3; color: white; border: none; border-radius: 4px; padding: 10px 15px; cursor: pointer;">Start</button>
+                    </div>
+                    <div class="plan" style="flex: 1; margin: 0 10px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; text-align: center;">
+                        <h3>Team</h3>
+                        <p>$0 / mo</p>
+                        <p>Designed for teams and organizations</p>
+                        <button style="background-color: #0056b3; color: white; border: none; border-radius: 4px; padding: 10px 15px; cursor: pointer;">Start</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        -->
+        <section id="about" class="about">
+            <div class="container" style="text-align: center;">
+                <h2>关于</h2>
+                <p style="color: #555; line-height: 2;">AI检测是一个免费的在线工具，旨在帮助用户检测内容是否由人工智能生成。</p>
+                <p style="color: #555; line-height: 2;">我们致力于提供准确和安全的服务，以确保用户数据的隐私和安全。</p>
+                <br />
+            </div>
+        </section>
+    </main>
+    <footer style="background-color: #f9f9f9; padding: 20px;">
+        <div class="container">
+            <p>©2024 AI检测</p>
+        </div>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-H91D5TNC3K"></script>  
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-H91D5TNC3K');
+        </script>
+    </footer>
+   <!--  <script src="script.js"></script> -->
+</body>
+</html>

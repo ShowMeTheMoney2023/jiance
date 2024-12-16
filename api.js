@@ -32,9 +32,9 @@ function displayResult(resultContainer, aiProbability, humanProbability, humanSe
                         <strong class="human-probability">${humanProbability}%</strong>
                     </div>
                 </div>
-                ${ (aiValue > 60 && aiValue < 90) || (aiValue > 50 && parseFloat(humanSegmentRatio) > 0) ? `
+                ${ (aiValue > 60 && aiValue < 90) || (aiValue > 50 && parseFloat(humanSegmentRatio) > 0) ? `  
                     <div class="note-item" style="color: #555; text-align: left; font-size: 14px; margin-top: 10px;">
-                        注意：AI在当前内容创作中提供了帮助，但仍有一部分是由人类创作的。
+                        注意：AI在当前内容创作中提供了帮助，但仍有一部分可能由人类创作。
                     </div>` : ''}
             </div>
         </div>`;

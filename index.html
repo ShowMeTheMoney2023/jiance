@@ -66,6 +66,53 @@
                 </div>
             </div>
         </section>
+        <section class="faq">
+            <div class="container" style="text-align: center;">
+                <h2>常见问题解答</h2>
+                <div class="faq-item">
+                    <h3 class="faq-question" onclick="toggleAnswer(this)">AI检测器在区分人类和AI生成文本方面有多可靠？<span style="cursor: pointer;">+</span></h3>
+                    <p class="faq-answer" style="display: none;">AI检测器相对可靠，但并非完美。像OpenAI的Classifier等工具使用机器学习分析文本模式，但其准确性可能有所不同。AI生成的内容往往模仿人类风格，这使得检测变得具有挑战性。对于简单或公式化的文本，检测的可靠性较高，但对于复杂的写作则较低。通过对多个模型的逐一测试并结合整体逻辑处理，检测的准确性可以显著提高。</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question" onclick="toggleAnswer(this)">有免费的AI检测器可以准确识别AI写作的内容吗？<span style="cursor: pointer;">+</span></h3>
+                    <p class="faq-answer" style="display: none;">是的，像ZeroGPT、Writer.com的AI检测器和GPTZero等工具提供免费的版本来识别AI写作内容。它们通过分析困惑度和突发性（文本不可预测性）来检测AI参与。然而，这些工具可能会有一些限制，例如字数上限和较低的精度。另一方面，aidetectorfree.com没有字数、使用频率或检测准确度的限制。</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question" onclick="toggleAnswer(this)">哪些AI检测工具最适合检测ChatGPT生成的文本？<span style="cursor: pointer;">+</span></h3>
+                    <p class="faq-answer" style="display: none;">像GPTZero、Originality.AI和Copyleaks AI内容检测器等工具是专门设计用于检测GPT生成的文本，包括ChatGPT。虽然这些工具能够识别此类内容，但它们的准确性有时可能不一致，并且通常需要付费才能获得完整访问权限。</p>  
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question" onclick="toggleAnswer(this)">AI写作检测器如何分析人工智能生成的内容？<span style="cursor: pointer;">+</span></h3>
+                    <p class="faq-answer" style="display: none;">AI写作检测器通过分析困惑度（词语的可预测性）和突发性（句子长度的变化）来进行检测。AI的写作模式通常比人类更加可预测。检测器使用这些特征和自然语言处理算法来识别AI生成的内容。</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question" onclick="toggleAnswer(this)">通用AI检测器和专门的ChatGPT检测器有什么区别？<span style="cursor: pointer;">+</span></h3>
+                    <p class="faq-answer" style="display: none;">通用AI检测器分析各种AI生成的内容，而ChatGPT检测器则专注于识别来自GPT模型（如GPT-3.5或GPT-4）的输出。然而，通用AI检测器并不限于ChatGPT，它们还需要分析和处理其他AI模型的输出，以确保全面检测。</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question" onclick="toggleAnswer(this)">AI文本检测器能有效识别GPT-4等语言模型生成的内容吗？<span style="cursor: pointer;">+</span></h3>
+                    <p class="faq-answer" style="display: none;">是的，但有一定的局限性。像aijiance.org等工具已更新为能够处理GPT-4的输出。然而，GPT-4的高级语言能力降低了检测准确性，特别是当内容经过编辑或看起来更像人类写作时。不断改进的检测器有助于保持其有效性。</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question" onclick="toggleAnswer(this)">有免费的AI检测器可以作为博客和学术写作的AI内容检测工具吗？<span style="cursor: pointer;">+</span></h3>
+                    <p class="faq-answer" style="display: none;">是的，像GPTZero和Content at Scale AI Detector等工具提供免费的检测选项，适用于博客和学术写作。它们专注于检测各种格式的AI生成内容，但可能需要付费升级才能广泛使用。与此相比，aijiance.org没有内容长度或使用频率的限制，允许免费访问。此外，其检测准确性非常可靠。</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question" onclick="toggleAnswer(this)">人工智能检测器在识别微妙的AI生成文本时有多准确？<span style="cursor: pointer;">+</span></h3>
+                    <p class="faq-answer" style="display: none;">准确性取决于工具和文本的复杂性。虽然像Originality.AI等工具声称具有较高的准确性，但微妙的AI生成文本（如简短或编辑过的内容）可能会绕过检测。大多数工具在长篇、未编辑的AI输出文本中效果最佳。</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question" onclick="toggleAnswer(this)">ChatGPT检测器与其他AI检测器相比，为什么更有效？<span style="cursor: pointer;">+</span></h3>
+                    <p class="faq-answer" style="display: none;">ChatGPT检测器特别针对识别GPT模型（如GPT-3.5和GPT-4）独有的文本模式和概率进行微调。如果其他检测工具也专门针对ChatGPT进行分析、处理和训练，它们的准确性可能会显著提高。</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question" onclick="toggleAnswer(this)">是否有在线AI检测工具能够提供实时的AI内容检测分析？<span style="cursor: pointer;">+</span></h3>
+                    <p class="faq-answer" style="display: none;">像aijiance.org等工具提供近实时的文本分析，快速准确地反馈AI生成的内容。这些工具高效地处理输入并提供即时结果。</p>
+                </div>
+                <!-- 可以添加更多问题 -->
+            </div>
+        </section>
+        
         <!-- 
         <section id="pricing" class="pricing">
             <div class="container">
@@ -86,13 +133,14 @@
                     <div class="plan" style="flex: 1; margin: 0 10px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; text-align: center;">
                         <h3>Team</h3>
                         <p>$0 / mo</p>
-                        <p>Designed for teams and organizations</p>  
+                        <p>Designed for teams and organizations</p>
                         <button style="background-color: #0056b3; color: white; border: none; border-radius: 4px; padding: 10px 15px; cursor: pointer;">Start</button>
                     </div>
                 </div>
             </div>
         </section>
         -->
+        <br /><br />
         <section id="about" class="about">
             <div class="container" style="text-align: center;">
                 <h2>关于</h2>
@@ -103,19 +151,25 @@
         </section>
     </main>
     <footer style="background-color: #f9f9f9; padding: 20px;">
-        <div class="container">  
+        <div class="container">
             <p>©2024 AI检测</p>
         </div>
         <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KET8RNJH4V"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-H91D5TNC3K"></script>  
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  gtag('config', 'G-KET8RNJH4V');
-</script>
+        gtag('config', 'G-H91D5TNC3K');
+        </script>
     </footer>
    <!--  <script src="script.js"></script> -->
+    <script>
+        function toggleAnswer(questionElement) {
+            const answerElement = questionElement.nextElementSibling;
+            answerElement.style.display = answerElement.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
 </body>
 </html>

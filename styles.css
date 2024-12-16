@@ -343,3 +343,12 @@ html, body {
     padding: 0; /* 去掉默认填充 */
     height: 100%; /* 确保高度为100% */
 }
+
+.faq-question {
+    font-weight: normal; /* 将问题的字体加粗样式移除 */
+    color: #555;
+}
+
+.faq-answer {
+    color: #555; /* 调整回答内容的颜色 */
+}
